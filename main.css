@@ -1,0 +1,169 @@
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  text-align: center;
+  margin: 0.5rem;
+}
+h5 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.app {
+  width: 300px;
+  height: 500px;
+  border: 5px solid #abcea1;
+  border-radius: 8px;
+  padding: 50px;
+  background-color: #fff;
+  display: block;
+
+  overflow-y: auto; /*enable vertical scrolling*/
+  transition: all ease-out 2s;
+}
+#addNew img {
+  height: 20px;
+  width: 20px;
+}
+
+#addNew {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(171, 206, 161, 0.35);
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.plus-sign {
+  background-color: #abcea1;
+  background: #abcea1;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  gap: 14px;
+  min-height: 300px; /* Set a maximum height for the tasks section */
+  overflow-y: auto; /* Enable vertical scrolling when tasks exceed the maximum height */
+}
+
+/* Hide the scrollbar for both the .app and #tasks */
+.app,
+#tasks {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide the scrollbar for Webkit (Chrome and Safari) */
+.app::-webkit-scrollbar,
+#tasks::-webkit-scrollbar {
+  display: none;
+}
+
+#tasks div {
+  background-color: #e2eede;
+  border: 3px solid #abcea1;
+  padding: 5px;
+  border-radius: 6px;
+  display: grid;
+  gap: 4px;
+  max-height: 150px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.date {
+  color: gray;
+  font-size: 15px;
+}
+
+.options {
+  justify-self: center;
+  display: flex;
+  gap: 20px;
+}
+
+.options img {
+  cursor: pointer;
+}
+
+.form {
+  background-color: #e2eede;
+  border: 3px solid #abcea1;
+  width: 450px;
+  height: 500px;
+  transition: all ease-in 2s;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0.5rem;
+}
+
+form input {
+  width: 95%;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #abcea1;
+}
+
+form input:focus {
+  outline-color: #abcea1;
+}
+
+form input:nth-child(7) {
+  height: 100px;
+}
+
+.buttons {
+  margin: 1rem;
+  width: 95%;
+
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.buttons span {
+  border: 2px solid #abcea1;
+  border-radius: 9px;
+  background-color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 50px;
+  height: 15px;
+  text-align: center;
+}
+
+form span:hover {
+  transform: scale(1.1);
+}
+
+.feedback {
+  background-color: #f0f0f0;
+  border: 2px solid #abcea1;
+  border-radius: 15px;
+  text-align: center;
+  margin: 2rem;
+  display: none;
+  width: 350px;
+  height: 60px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+     
+    <div class="app">
+      
+      <h4>TODO App</h4>
+
+      <div id="addNew">
+        <span>Add New Task</span>
+        <img src="./addnew.png" alt="plus-sign" class="plus-sign" />
+      </div>
+
+      <h5>Tasks</h5>
+
+      <div id="tasks">
+        <!-- <div class="task">
+          <span class="title">Task 1</span>
+          <span class="date">2022-1-20</span>
+          <p>going to gym to watch netflix</p>
+
+          <span class="options">
+            <img src="../YT-CRUD/icons8-edit-24.png" alt="edit-icon" id="update-btn"  class="update-button"/>
+            <img src="../YT-CRUD/icons8-delete-24.png" alt="delete-icon" id="delete-btn" class="delete-button" />
+          </span>
+          </span>
+        </div>
+
+        <div class="task">
+          <span class="title">Task 2</span>
+          <span class="date">2022-1-20</span>
+          <p>going to church</p>
+
+          <span class="options">
+            <img src="../YT-CRUD/icons8-edit-24.png" alt="edit-icon" id="update-btn"  class="update-button"/>
+            <img src="../YT-CRUD/icons8-delete-24.png" alt="delete-icon" id="delete-btn" class="delete-button" />
+          </span>
+        </div> -->
+      </div>
+    </div>
+    <div class="feedback"></div>
+    <div class="form" id="task-form">
+     
+      <form action="">
+        <h3>Add New Task</h3>
+       
+        <label for="">Task Title</label>
+        <input type="text" id="task-title" />
+        <label for="">Due Date</label>
+        <input type="date" name="date" id="date" max="2030" />
+        <label for="">Description</label>
+        <input type="text" name="description" id="descp" />
+
+        <div class="buttons">
+<span id="add-task">Add</span>
+        <span id="close-form">Close</span>
+        </div>
+        
+      </form>
+    </div>
+  </body>
+
+  <script src="./main.js"></script>
+</html>
